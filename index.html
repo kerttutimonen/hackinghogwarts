@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hogwarts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h3>Hogwarts</h3>
+      <h1>Class of 1991</h1>
+      <p>
+        Filter:
+        <button class="filter" data-action="filter" data-theme="Gryffindor">
+          Gryffindor
+        </button>
+        <button class="filter" data-action="filter" data-filter="Ravenclaw">
+          Ravenclaw
+        </button>
+        <button class="filter" data-action="filter" data-filter="Slytherin">
+          Slytherin
+        </button>
+
+        <button class="filter" data-action="filter" data-filter="Hufflepuff">
+          Hufflepuff
+        </button>
+
+        <button class="filter" data-action="filter" data-filter="*">
+          ALL
+        </button>
+      </p>
+      <p>
+
+        Sort by:
+        <button class="sort" data-action="sort" data-sort-direction="asc" data-sort="firstName">First Name</button>
+        <button class="sort" data-action="sort" data-sort-direction="asc" data-sort="lastName">Last Name</button>
+        <button class="sort" data-action="sort" data-sort-direction="asc" data-sort="house">House</button>
+
+      </p>
+
+      <p>
+
+<!--         Search for student: 
+<form>
+<input name="search" type="search">
+<input type="submit" value="search">
+</form> -->
+
+      </p>
+
+      <div></div>
+
+      <table id="list" style="width: 100%;">
+        <thead>
+          <tr id="titles">
+            <th>Photo</th>
+            <th>First name</th>
+           <!--  <th>Nickname</th>
+            <th>Middle name</th> -->
+            <th>Last name</th>
+            <th>House</th>
+            <th>More info</th>
+          </tr>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!---Student template-->
+        </tbody>
+      </table>
+      <template id="student">
+        <tr>
+
+         <td> <img class="studentAvatar" src="" alt="photo"> </td>
+ 
+          <td data-field="firstname">FIRST NAME</td>
+         <!--  <td data-field="nickname">NICKNAME</td>
+          <td data-field="middlename">MIDDLE NAME</td>
+         -->
+          <td data-field="lastname">LAST NAME</td>
+          <td data-field="house">HOUSE</td>
+          <td data-field="button">
+            <button type="button" class="button">MORE</button>
+          </td>
+        </tr>
+      </template>
+    </main>
+    <div id="modaali" class="modal-background hide" data-theme="">
+      <div id="modal-name">
+        <h2>Student:</h2>
+        <img src="" class="studentAvatar" data-field="photo" alt="">
+          <h2 class="firstname" data-field="firstname"></h2>
+          <h2 class="middlename" data-field="middlename"></h2>
+          <h2 class="lastname" data-field="lastname"></h2>
+          <h2 class="house" data-field="house"></h2>
+
+          <h2><i>(close the detail page by clicking the pop-up)</i></h2>
+
+
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>

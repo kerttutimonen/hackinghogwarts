@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Harry Potter;
+  src: url(WizardWorldSimplified-Kxr7.ttf);
+}
+
+@font-face {
+  font-family: Harry Potter2;
+  src: url(DjbILoveAGinger-18XZ.ttf);
+}
+
+body {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  font-family: Harry Potter;
+  background-image: url(train.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  padding: 70px;
+}
+
+table {
+  font-family: Harry Potter2;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+  background-color: white;
+  opacity: 0.8;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.hide {
+  display: none;
+}
+
+.studentAvatar {
+  width: 100px;
+}
+
+[data-theme="theme1"] {
+  --primary-color: #7f0909;
+  --secondary-color: #ffc500;
+}
+
+[data-theme="theme2"] {
+  --primary-color: #5158b8;
+  --secondary-color: #c99191;
+}
+
+[data-theme="theme3"] {
+  --primary-color: #0d6217;
+  --secondary-color: #aaaaaa;
+}
+[data-theme="theme4"] {
+  --primary-color: #eee117;
+  --secondary-color: #000000;
+}
+.modal-background {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#modaali {
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  margin: 1em;
+  padding: 2em;
+  color: var(--secondary-color);
+  text-align: center;
+}
+#modaali h1 {
+  margin-top: 0;
+  color: var(--secondary-color);
+  font-family: Harry Potter2;
+}
+
+#modaali h2 {
+  margin-top: 0;
+  font-size: 14px;
+  font-family: Harry Potter2;
+}
+
+[data-theme="Gryffindor"] {
+  --primary-color: #7f0909;
+  --secondary-color: #ffc500;
+}
+
+[data-theme="Ravenclaw"] {
+  --primary-color: #5158b8;
+  --secondary-color: #5e3f17;
+}
+
+[data-theme="Slytherin"] {
+  --primary-color: #0d6217;
+  --secondary-color: #aaaaaa;
+}
+
+[data-theme="Hufflepuff"] {
+  --primary-color: #eee117;
+  --secondary-color: #000000;
+}
